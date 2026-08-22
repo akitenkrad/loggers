@@ -1,13 +1,19 @@
 [package]
 name = "loggers"
-version = "0.1.1"
-edition = "2021"
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.85"
 authors = ["akitenkrad"]
-description = "simple logger"
+description = "A simple log backend that routes records to per-target JSON Lines files, with a catch-all fallback"
 license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/akitenkrad/rs-loggers"
+documentation = "https://docs.rs/loggers"
+keywords = ["log", "logger", "logging", "json"]
+categories = ["development-tools::debugging"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-chrono = "0.4.38"
-log = { version = "0.4.6", features = ["std"] }
-serde_json = "1.0.128"
+chrono = "0.4.45"
+log = { version = "0.4.33", features = ["std"] }
+serde_json = "1.0.151"
